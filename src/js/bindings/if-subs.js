@@ -67,13 +67,13 @@ var afterSubscriptionProp;
 if (typeof ko.DEBUG !== 'undefined' && typeof ko.isWritableObservable !== 'undefined') {
   beforeSubscriptionProp = 'beforeSubscriptionAdd';
   afterSubscriptionProp = 'afterSubscriptionRemove';
-} else if (ko.version.match(/^3\.2\./)) {
+} else if (ko.version == "3.2.0") {
   beforeSubscriptionProp = 'va';
   afterSubscriptionProp = 'nb';
-} else if (ko.version.match(/^3\.3\./)) {
+} else if (ko.version == "3.3.0") {
   beforeSubscriptionProp = 'ja';
   afterSubscriptionProp = 'ua';
-} else if (ko.version.match(/^3\.4\./)) {
+} else if (ko.version == "3.4.0") {
   beforeSubscriptionProp = 'sa';
   afterSubscriptionProp = 'Ia';
 }
